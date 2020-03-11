@@ -1,0 +1,8 @@
+*.mp4
+*.mov
+*.vscode
+__pycache__
+*.ipynb
+*.png
+*.jpg
+*.json
