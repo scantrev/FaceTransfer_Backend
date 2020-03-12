@@ -72,6 +72,7 @@ def make_animation(
         kp_source = kp_detector(source)
         kp_driving_initial = kp_detector(driving[:, :, 0])
 
+        # for frame_idx in tqdm(range(driving.shape[2])):
         for frame_idx in tqdm(range(driving.shape[2])):
             driving_frame = driving[:, :, frame_idx]
             kp_driving = kp_detector(driving_frame)

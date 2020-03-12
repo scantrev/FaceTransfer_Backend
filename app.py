@@ -23,7 +23,9 @@ def crop_video():
 def generate_result():
     input_json = request.json
     print(input_json)
-    result = {}
+    cropped_driving_vid_path = input_json["croppedDrivingVideoPath"]
+    src_img_path = input_json["sourceImagePath"]
+    result = lib.generate_result(cropped_driving_vid_path, src_img_path)
     return jsonify(result)
 
 
